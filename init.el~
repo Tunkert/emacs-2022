@@ -1,0 +1,17 @@
+;; inhibit splash screen
+(setq inhibit-splash-screen t)
+
+;; set default font and size
+(set-face-attribute 'default nil :font "DeJaVuSans-11" )
+
+;; maximize screen on startup
+(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+
+;; disable menu on startup
+(menu-bar-mode -1)
+
+;; disable tools on startup
+(tool-bar-mode -1)
+
+;; disable scroll bar on startup
+(toggle-scroll-bar -1)
